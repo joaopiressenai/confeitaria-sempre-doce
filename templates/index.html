@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sempre Doce</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sempre Doce</h1>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('contato') }}">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Os melhores bolos da cidade!</h2>
+            <p>Delícias feitas com amor e ingredientes frescos.</p>
+            <a href="#" class="cta-button">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma confeitaria dedicada a criar bolos deliciosos e personalizados para todas as ocasiões. Nossa paixão pela confeitaria é refletida em cada criação que sai da nossa cozinha.</p>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="container">
+            <h2>Nosso Cardápio</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Um clássico irresistível com camadas de chocolate rico.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Bolo de Morango</h3>
+                    <p>Fresco e frutado, perfeito para qualquer celebração.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Bolo de Cenoura</h3>
+                    <p>Uma delícia tradicional com cobertura de chocolate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sempre Doce. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
